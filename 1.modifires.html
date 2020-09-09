@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div id="obj1" @click="show('111')">
+            obj1
+            <div id="obj2" @click="show('222')">obj2</div>
+            <div id="obj3" @click="show('333')">obj3</div>
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el:"#app",
+            methods: {
+                show(aaa){
+                    alert(aaa);
+                }
+            }
+        })
+    </script>
+</body>
+</html>
